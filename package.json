@@ -1,0 +1,19 @@
+{
+  "name": "realtour",
+  "version": "1.0.0",
+  "description": "landing page for realtour",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silanka007/realtour.git"
+  },
+  "author": "Paul Onyekwelu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silanka007/realtour/issues"
+  },
+  "homepage": "https://github.com/silanka007/realtour#readme"
+}
