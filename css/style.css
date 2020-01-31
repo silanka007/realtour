@@ -174,70 +174,32 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translate(0); }
 
-.btn:link, .btn:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1.5rem 4.0rem;
-  display: inline-block;
-  transition: all .2s;
-  border-radius: 10rem;
-  font-size: 1.6rem;
+.composition {
   position: relative; }
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn::after {
-  content: '';
-  display: inline-block;
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10rem;
-  transition: all 0.4s; }
-
-.btn--white {
-  background-color: #fff;
-  color: #777; }
-
-.btn::after {
-  background-color: #fff;
-  color: #777; }
-
-.btn--animate {
-  animation: moveInBottom .4s ease-out .60s;
-  animation-fill-mode: backwards; }
-
-.btn-text:link, .btn-text:visited {
-  display: inline-block;
-  font-size: 1.6rem;
-  color: #55c57a;
-  text-decoration: none;
-  border-bottom: 1px solid #55c57a;
-  padding: .3rem;
-  transition: all .2s; }
-
-.btn-text:hover {
-  background: #55c57a;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  transform: translateY(-3px); }
-
-.btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  transform: translate(0); }
+  .composition__photo {
+    position: absolute;
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: .5rem;
+    transition: all .2s;
+    z-index: 10;
+    outline-offset: 1.6rem; }
+    .composition__photo--p1 {
+      top: -2rem;
+      left: 0; }
+    .composition__photo--p2 {
+      top: 2rem;
+      right: 0; }
+    .composition__photo--p3 {
+      top: 10rem;
+      left: 20%; }
+    .composition__photo:hover {
+      outline: 1.6rem solid #55c57a;
+      z-index: 20;
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+      transform: scale(1.1) translateY(-1rem); }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .header {
   height: 95vh;
